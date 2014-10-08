@@ -20,8 +20,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+Plugin 'genoma/vim-less'
+Plugin 'tpope/vim-surround'
+Plugin 'tomtom/tcomment_vim'
+" Plugin 'xolox/vim-misc'
+" Plugin 'xolox/vim-easytags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,7 +42,9 @@ endif
 
 " Font and theme of GUI
 if has("gui_running")
-    set guifont=Source\ Code\ Pro\ 12
+    set guifont=Input\ 11
+    " set guifont=Ubuntu\ Mono\ 10
+    " set guifont=Source\ Code\ Pro\ 10
 
     " Monokai (dark) theme
     colorscheme monokai
@@ -66,6 +71,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"Switch between buffers without saving
+set hidden
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
@@ -88,6 +96,7 @@ set fileencodings=utf-8,cp1251,koi8-r,cp866
 
 " Игнорировать регистр букв при поиске
 set ignorecase
+set smartcase
 
 " Хитро удалить буфер, но оставить окно
 nmap ,d :b#<bar>bd#<bar>b<CR>
@@ -98,5 +107,5 @@ set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
 
 " easytags
-:let g:easytags_async = 1
-:let g:easytags_auto_highlight = 0
+" :let g:easytags_async = 1
+" :let g:easytags_auto_highlight = 0
