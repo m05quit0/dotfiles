@@ -24,6 +24,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'moll/vim-node'
+Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -107,10 +108,6 @@ set nobackup 	     " no backup files
 set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
 
-" easytags
-" :let g:easytags_async = 1
-" :let g:easytags_auto_highlight = 0
-
 " nnoremap <Leader>m :w <BAR> !lessc % > %:r.css<CR><space>
 
 " Compiling Less Files from Vim every save action
@@ -121,3 +118,6 @@ function LessToCss()
   execute command
 endfunction
 autocmd BufWritePost,FileWritePost *.less call LessToCss()
+
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
