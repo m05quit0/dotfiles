@@ -20,11 +20,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
-Plugin 'genoma/vim-less'
-Plugin 'tpope/vim-surround'
+Plugin 'groenewege/vim-less'
 Plugin 'tomtom/tcomment_vim'
-" Plugin 'xolox/vim-misc'
-" Plugin 'xolox/vim-easytags'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'moll/vim-node'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,7 +48,7 @@ if has("gui_running")
     " Monokai (dark) theme
     colorscheme monokai
 
-    " Solarized
+    " Solarized (light) theme
     " colorscheme solarized
     " set background=light
 endif
@@ -58,7 +57,7 @@ endif
 if has("gui_running")
     set laststatus=2 "always show statusbar
     let g:airline#extensions#tabline#enabled = 1
-    " let g:airline_powerline_fonts = 1
+    let g:airline_powerline_fonts = 1
 endif
 
 " Hide native mode indication 
@@ -73,6 +72,8 @@ set expandtab
 
 "Switch between buffers without saving
 set hidden
+
+set nowrap
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -109,3 +110,14 @@ set noswapfile 	     " no swap files
 " easytags
 " :let g:easytags_async = 1
 " :let g:easytags_auto_highlight = 0
+
+" nnoremap <Leader>m :w <BAR> !lessc % > %:r.css<CR><space>
+
+" Compiling Less Files from Vim every save action
+function LessToCss()
+  let current_file = shellescape(expand('%:p'))
+  let filename = shellescape(expand('%:r'))
+  let command = "silent !lessc " . current_file . " " . filename . ".css"
+  execute command
+endfunction
+autocmd BufWritePost,FileWritePost *.less call LessToCss()

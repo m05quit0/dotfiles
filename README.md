@@ -1,4 +1,4 @@
-dotfiles
+DotFiles
 ========
 
-linux config files
+My workspace config files.
