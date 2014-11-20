@@ -1,0 +1,19 @@
+{
+    "ensure_newline_at_eof_on_save": true,
+    "fallback_encoding": "Cyrillic (Windows 1251)",
+    "font_face": "Input Mono",
+    "font_size": 11,
+    "ignored_packages":
+    [
+    ],
+    "indent_to_bracket": true,
+    "rulers":
+    [
+        80
+    ],
+    "show_encoding": true,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "vintage_start_in_command_mode": true,
+    "vintage_ctrl_keys": false,
+}
