@@ -31,10 +31,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Zen of GUI
-set guioptions-=m  "menu bar
-set guioptions-=T  "toolbar
-set guioptions-=r  "scrollba
-set guioptions-=L  "remove left-hand scroll barr
+set guioptions-=m  " no menu bar
+set guioptions-=T  " no toolbar
+set guioptions-=r  " no scrollbar
+set guioptions-=L  " no remove left-hand scroll barr
 
 if has("gui_running")
     :set colorcolumn=80
@@ -42,7 +42,7 @@ endif
 
 " Font and theme of GUI
 if has("gui_running")
-    set guifont=Input\ 11
+    set guifont=Input\ Mono\ 11
     " set guifont=Ubuntu\ Mono\ 10
     " set guifont=Source\ Code\ Pro\ 10
 
