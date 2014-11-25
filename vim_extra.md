@@ -31,6 +31,7 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
     mkdir ~/.fonts/
     mv PowerlineSymbols.otf ~/.fonts/
     fc-cache -vf ~/.fonts/
+    mkdir -p ~/.config/fontconfig/conf.d 
     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 ## gVim
