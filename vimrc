@@ -34,7 +34,7 @@ filetype plugin indent on    " required
 set guioptions-=m  " no menu bar
 set guioptions-=T  " no toolbar
 set guioptions-=r  " no scrollbar
-set guioptions-=L  " no remove left-hand scroll barr
+set guioptions-=L  " remove left-hand scroll barr
 
 if has("gui_running")
     :set colorcolumn=80
