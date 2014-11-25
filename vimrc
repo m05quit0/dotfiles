@@ -61,7 +61,7 @@ if has("gui_running")
     let g:airline_powerline_fonts = 1
 endif
 
-" Hide native mode indication 
+" Hide native mode indication
 if has("gui_running")
     set noshowmode
 endif
