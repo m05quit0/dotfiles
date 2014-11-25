@@ -1,6 +1,7 @@
 ## Vundle
 Установить Vundle
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Airline
 Использование шрифтов powerline для отображения дополнительных символов в airline.
