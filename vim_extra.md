@@ -1,3 +1,12 @@
+## .vimrc
+Склонировать этот репозиторий.
+
+    git clone https://github.com/m05quit0/dotfiles.git ~/Dev/etc/dotfiles
+
+Создать ссылку для .vimrc в директории пользователя на склонированный репозиторий.
+    
+    ln -s ~/Dev/etc/dotfiles/vimrc ~/.vimrc
+
 ## Vundle
 Установить Vundle.
 
