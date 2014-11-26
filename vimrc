@@ -25,6 +25,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'moll/vim-node'
 Plugin 'sjl/gundo.vim'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

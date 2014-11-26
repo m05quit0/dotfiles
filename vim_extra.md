@@ -48,6 +48,19 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
 
     sudo apt-get install exuberant-ctags
 
+## Markdown preview
+Установить markdown.
+
+    sudo apt-get install markdown
+
+Установить xdotool.
+
+    sudo apt-get install xdotool
+
+Раскомментирвать превью по сохранению .md файла и закомментировать хоткей ctrl+p - в конце скрипта.
+
+    vim ~/.vim/bundle/vim-markdown-preview/plugin/vim-markdown-preview.vim
+
 ## gVim
 Цвет отступов от рабочей области в полноэкранном режиме (справа и снизу).
 Создать файл ~/.gtkrc-2.0 cо следующим содержимым:
