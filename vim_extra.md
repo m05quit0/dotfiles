@@ -4,7 +4,7 @@
     git clone https://github.com/m05quit0/dotfiles.git ~/Dev/etc/dotfiles
 
 Создать ссылку для .vimrc в директории пользователя на склонированный репозиторий.
-    
+
     ln -s ~/Dev/etc/dotfiles/vimrc ~/.vimrc
 
 ## Vundle
@@ -40,8 +40,13 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
     mkdir ~/.fonts/
     mv PowerlineSymbols.otf ~/.fonts/
     fc-cache -vf ~/.fonts/
-    mkdir -p ~/.config/fontconfig/conf.d 
+    mkdir -p ~/.config/fontconfig/conf.d
     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+## CTags
+Для работы tagbar понадобится ctags.
+
+    sudo apt-get install exuberant-ctags
 
 ## gVim
 Цвет отступов от рабочей области в полноэкранном режиме (справа и снизу).
