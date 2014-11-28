@@ -27,6 +27,7 @@ Plugin 'moll/vim-node'
 Plugin 'sjl/gundo.vim'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
