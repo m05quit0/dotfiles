@@ -28,6 +28,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,11 +51,11 @@ if has("gui_running")
     " set guifont=Source\ Code\ Pro\ 10
 
     " Monokai (dark) theme
-    colorscheme monokai
+    " colorscheme monokai
 
     " Solarized (light) theme
-    " colorscheme solarized
-    " set background=light
+    colorscheme solarized
+    set background=light
 endif
 
 " Vim-airline
@@ -127,3 +128,8 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_right = 1
 let g:gundo_preview_bottom = 1
 let g:gundo_width = 30
+
+" File Types
+au FileType html setl tabstop=2 shiftwidth=2 et
+au FileType css setl tabstop=2 shiftwidth=2 et
+au FileType javascript setl tabstop=2 shiftwidth=2 et
