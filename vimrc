@@ -51,11 +51,11 @@ if has("gui_running")
     " set guifont=Source\ Code\ Pro\ 10
 
     " Monokai (dark) theme
-    " colorscheme monokai
+    colorscheme monokai
 
     " Solarized (light) theme
-    colorscheme solarized
-    set background=light
+    " colorscheme solarized
+    " set background=light
 endif
 
 " Vim-airline
@@ -133,3 +133,6 @@ let g:gundo_width = 30
 au FileType html setl tabstop=2 shiftwidth=2 et
 au FileType css setl tabstop=2 shiftwidth=2 et
 au FileType javascript setl tabstop=2 shiftwidth=2 et
+
+" Git gutter
+let g:gitgutter_max_signs = 2000
