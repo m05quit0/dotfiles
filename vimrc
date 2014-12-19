@@ -142,3 +142,20 @@ let g:gitgutter_max_signs = 2000
 
 " Flake8
 let g:flake8_show_in_file = 1
+
+" Identation in python
+let g:pyindent_open_paren = '&sw' " default &sw * 2 
+
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
