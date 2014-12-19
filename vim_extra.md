@@ -69,3 +69,7 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
       bg[NORMAL] = "#202020" # this matches my gvim theme 'Normal' bg color.
     }
     widget "vim-main-window.*GtkForm" style "vimfix"
+
+## Flake8
+    
+    sudo pip install flake8

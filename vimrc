@@ -29,6 +29,7 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'nvie/vim-flake8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -138,3 +139,6 @@ au FileType htmldjango setl tabstop=2 shiftwidth=2 et
 
 " Git gutter
 let g:gitgutter_max_signs = 2000
+
+" Flake8
+let g:flake8_show_in_file = 1
