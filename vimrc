@@ -30,6 +30,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'nvie/vim-flake8'
+Plugin 'szw/vim-tags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
