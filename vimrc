@@ -158,4 +158,4 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
-autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
