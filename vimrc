@@ -135,6 +135,7 @@ let g:gundo_width = 30
 au FileType html setl tabstop=2 shiftwidth=2 et
 au FileType css setl tabstop=2 shiftwidth=2 et
 au FileType javascript setl tabstop=2 shiftwidth=2 et
+au FileType coffee setl tabstop=2 shiftwidth=2 et
 au FileType htmldjango setl tabstop=2 shiftwidth=2 et
 
 " Git gutter
