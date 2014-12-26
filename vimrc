@@ -42,6 +42,7 @@ set guioptions-=T  " no toolbar
 set guioptions-=r  " no scrollbar
 set guioptions-=L  " remove left-hand scroll barr
 
+" Ruler
 if has("gui_running")
     :set colorcolumn=80
 endif
@@ -115,8 +116,6 @@ set nobackup 	     " no backup files
 set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
 
-" nnoremap <Leader>m :w <BAR> !lessc % > %:r.css<CR><space>
-
 " Compiling Less Files from Vim every save action
 function LessToCss()
   let current_file = shellescape(expand('%:p'))
@@ -161,3 +160,9 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
+
+" Let YouCompleteMe use Ctags
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+" Generate Ctags on file save
+au BufWritePost *.py,*.js,*.php,*.rb silent! !ctags -R &
