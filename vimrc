@@ -31,6 +31,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'nvie/vim-flake8'
 Plugin 'szw/vim-tags'
+Plugin 'lukaszkorecki/CoffeeTags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -166,3 +167,6 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 
 " Generate Ctags on file save
 au BufWritePost *.py,*.js,*.php,*.rb silent! !ctags -R &
+
+" CoffeeTags
+let g:CoffeeAutoTagIncludeVars=1
