@@ -101,7 +101,7 @@ if has("gui_running")
     autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 endif
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '^\.git', '^tags$']
 
 " Список кодировок файлов для автоопределения
 set fileencodings=utf-8,cp1251,koi8-r,cp866
