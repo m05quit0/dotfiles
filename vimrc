@@ -56,11 +56,11 @@ if has("gui_running")
     " set guifont=Source\ Code\ Pro\ 10
 
     " Monokai (dark) theme
-    colorscheme monokai
+    " colorscheme monokai
 
     " Solarized (light) theme
-    " colorscheme solarized
-    " set background=light
+    colorscheme solarized
+    set background=light
 endif
 
 " Vim-airline
