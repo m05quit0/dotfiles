@@ -142,6 +142,7 @@ au FileType htmldjango setl tabstop=2 shiftwidth=2 et
 
 " Git gutter
 let g:gitgutter_max_signs = 2000
+highlight clear SignColumn " fix dark gutter background with solarized light theme
 
 " Flake8
 let g:flake8_show_in_file = 1
