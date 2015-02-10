@@ -169,7 +169,7 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 let g:ycm_collect_identifiers_from_tags_files = 1
 
 " Generate Ctags on file save
-au BufWritePost *.py,*.js,*.php,*.rb silent! !ctags -R &
+au BufWritePost *.py,*.js,*.coffee,*.php,*.rb silent! !ctags -R &
 
 " CoffeeTags
 let g:CoffeeAutoTagIncludeVars=1
