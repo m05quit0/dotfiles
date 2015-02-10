@@ -12,6 +12,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" Plugins
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
@@ -32,7 +34,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'nvie/vim-flake8'
 Plugin 'szw/vim-tags'
 Plugin 'lukaszkorecki/CoffeeTags'
-Plugin 'jmcantrell/vim-virtualenv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
