@@ -45,7 +45,7 @@ set guioptions-=L  " remove left-hand scroll barr
 
 " Ruler
 if has("gui_running")
-    :set colorcolumn=80
+    :set colorcolumn=120
 endif
 
 " Font and theme of GUI
