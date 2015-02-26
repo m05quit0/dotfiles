@@ -10,7 +10,6 @@
 Добавить ссылки на конфиги в соответствующих местах.
 
     ln -s ~/Dev/etc/dotfiles/vimrc ~/.vimrc
-    ln -s ~/Dev/etc/dotfiles/flake8 ~/.config/flake8
     ln -s ~/Dev/etc/dotfiles/gitconfig ~/.gitconfig
     ln -s ~/Dev/etc/dotfiles/jshintrc ~/.jshintrc
 
