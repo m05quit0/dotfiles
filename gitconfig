@@ -1,0 +1,9 @@
+[user]
+	email = m05quit0@yandex.ru
+	name = m05quit0
+[push]
+	default = matching
+[alias]
+    st = status
+    co = checkout
+    br = branch
