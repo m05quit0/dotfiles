@@ -1,4 +1,7 @@
-DotFiles
-========
+# DotFiles
 
-My workspace config files.
+My development workspace config files.
+
+## Vim
+
+Read vim_extra.md

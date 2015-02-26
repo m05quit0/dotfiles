@@ -73,3 +73,4 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
 ## Flake8
     
     sudo pip install flake8
+    ln -s ~/Dev/etc/dotfiles/flake8 ~/.config/flake8
