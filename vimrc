@@ -14,25 +14,24 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mattn/emmet-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
-Plugin 'tpope/vim-fugitive'
-Plugin 'groenewege/vim-less'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'moll/vim-node'
 Plugin 'sjl/gundo.vim'
-Plugin 'JamshedVesuna/vim-markdown-preview'
-Plugin 'kien/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kchmck/vim-coffee-script'
+
 Plugin 'nvie/vim-flake8'
-Plugin 'lukaszkorecki/CoffeeTags'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'mattn/emmet-vim'
+Plugin 'groenewege/vim-less'
+Plugin 'moll/vim-node'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -164,15 +163,5 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 
-" Let YouCompleteMe use Ctags
-let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
-let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
+" YouCompleteMe
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string
-
-" Generate Ctags on file save
-au BufWritePost *.py,*.js,*.coffee,*.php,*.rb silent! !ctags -R &
-
-" CoffeeTags
-let g:CoffeeAutoTagIncludeVars=1
