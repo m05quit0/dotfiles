@@ -14,8 +14,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -24,9 +22,12 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
 Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'nvie/vim-flake8'
-Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
