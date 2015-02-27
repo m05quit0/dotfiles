@@ -155,6 +155,7 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 
 " YouCompleteMe
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " Netrw mode
 let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
