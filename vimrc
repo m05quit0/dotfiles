@@ -14,7 +14,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
-Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
@@ -96,14 +95,6 @@ let g:syntastic_javascript_checkers = ['jshint']
 " Hide line numbers
 set nonumber
 
-" NERDTree
-if has("gui_running")
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-endif
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
-
 " Список кодировок файлов для автоопределения
 set fileencodings=utf-8,cp1251,koi8-r,cp866
 
@@ -145,9 +136,6 @@ au FileType htmldjango setl tabstop=2 shiftwidth=2 et
 let g:gitgutter_max_signs = 2000
 highlight clear SignColumn " fix dark gutter background with solarized light theme
 
-" Flake8
-let g:flake8_show_in_file = 1
-
 " Identation in python
 let g:pyindent_open_paren = '&sw' " default &sw * 2 
 
@@ -167,3 +155,7 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 
 " YouCompleteMe
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+
+" Netrw mode
+let g:netrw_liststyle = 3 " tree style listing
+let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags/$,^\.vagrant/$'
