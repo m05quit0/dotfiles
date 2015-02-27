@@ -157,5 +157,4 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
 
 " Netrw mode
-let g:netrw_liststyle = 3 " tree style listing
 let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
