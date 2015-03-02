@@ -155,6 +155,7 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 
 " YouCompleteMe
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " Netrw mode
