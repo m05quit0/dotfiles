@@ -13,7 +13,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Plugins
+" Common plugins
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
@@ -25,7 +25,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/ZoomWin'
 
+" Filetype specific plugins
 Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
