@@ -37,11 +37,40 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Tab
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
+
+set hidden " Switch between buffers without saving
+set nowrap " No wrap lines
+set nonumber " Hide line numbers
+
+" Список кодировок файлов для автоопределения
+set fileencodings=utf-8,cp1251,koi8-r,cp866
+
+" Игнорировать регистр букв при поиске
+set ignorecase
+set smartcase
+
+" Хитро удалить буфер, но оставить окно
+nmap ,d :b#<bar>bd#<bar>b<CR>
+
+" отключаем бэкапы и своп-файлы
+set nobackup 	     " no backup files
+set nowritebackup    " only in case you don't want a backup file while editing
+set noswapfile 	     " no swap files
+
+" Netrw mode
+let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
+
 " Zen of GUI
 set guioptions-=m  " no menu bar
 set guioptions-=T  " no toolbar
 set guioptions-=r  " no scrollbar
-set guioptions-=L  " remove left-hand scroll barr
+set guioptions-=L  " remove left-hand scrollbar
 
 " Ruler
 if has("gui_running")
@@ -74,16 +103,6 @@ if has("gui_running")
     set noshowmode
 endif
 
-" Tab
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-"Switch between buffers without saving
-set hidden
-
-set nowrap
-
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
@@ -92,24 +111,6 @@ let g:syntastic_check_on_open=1
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = "--max-line-length=120"
 let g:syntastic_javascript_checkers = ['jshint']
-
-" Hide line numbers
-set nonumber
-
-" Список кодировок файлов для автоопределения
-set fileencodings=utf-8,cp1251,koi8-r,cp866
-
-" Игнорировать регистр букв при поиске
-set ignorecase
-set smartcase
-
-" Хитро удалить буфер, но оставить окно
-nmap ,d :b#<bar>bd#<bar>b<CR>
-
-" отключаем бэкапы и своп-файлы
-set nobackup 	     " no backup files
-set nowritebackup    " only in case you don't want a backup file while editing
-set noswapfile 	     " no swap files
 
 " Compiling Less Files from Vim every save action
 function LessToCss()
@@ -125,13 +126,6 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_right = 1
 let g:gundo_preview_bottom = 1
 let g:gundo_width = 30
-
-" File Types
-au FileType html setl tabstop=2 shiftwidth=2 et
-au FileType css setl tabstop=2 shiftwidth=2 et
-au FileType javascript setl tabstop=2 shiftwidth=2 et
-au FileType coffee setl tabstop=2 shiftwidth=2 et
-au FileType htmldjango setl tabstop=2 shiftwidth=2 et
 
 " Git gutter
 let g:gitgutter_max_signs = 2000
@@ -158,6 +152,3 @@ autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
 let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
-
-" Netrw mode
-let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
