@@ -87,7 +87,7 @@ if has("gui_running")
     colorscheme solarized
     set background=light
 
-    " Setting colorscheme form command line
+    " Setting colorscheme from command line
     " gvim . --cmd 'theme="dark"'
     if exists("theme")
         if theme == "dark" 
