@@ -83,12 +83,21 @@ if has("gui_running")
     " set guifont=Ubuntu\ Mono\ 10
     " set guifont=Source\ Code\ Pro\ 10
 
-    " Monokai (dark) theme
-    " colorscheme monokai
-
-    " Solarized (light) theme
+    " Default color scheme - Solarized (light)
     colorscheme solarized
     set background=light
+
+    " Setting colorscheme form command line
+    " gvim . --cmd 'theme="dark"'
+    if exists("theme")
+        if theme == "dark" 
+            colorscheme monokai
+        endif
+        if theme == "light" 
+            colorscheme solarized
+            set background=light
+        endif
+    endif
 endif
 
 " Vim-airline
