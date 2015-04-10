@@ -93,9 +93,13 @@ if has("gui_running")
         if theme == "dark" 
             colorscheme monokai
         endif
-        if theme == "light" 
+        if theme == "solarizedlight" 
             colorscheme solarized
             set background=light
+        endif
+        if theme == "solarizeddark" 
+            colorscheme solarized
+            set background=dark
         endif
     endif
 endif
