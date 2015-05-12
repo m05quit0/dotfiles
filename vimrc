@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/ZoomWin'
+Plugin 'scrooloose/nerdcommenter'
 
 " Filetype specific plugins
 Plugin 'mattn/emmet-vim'
