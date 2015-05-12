@@ -12,3 +12,4 @@
     st = status
     co = checkout
     br = branch
+    aa = add -A
