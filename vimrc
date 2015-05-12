@@ -26,6 +26,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/ZoomWin'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'craigemery/vim-autotag'
 
 " Filetype specific plugins
 Plugin 'mattn/emmet-vim'
