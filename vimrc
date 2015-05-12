@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/ZoomWin'
+Plugin 'scrooloose/nerdcommenter'
 
 " Filetype specific plugins
 Plugin 'mattn/emmet-vim'
@@ -84,12 +85,25 @@ if has("gui_running")
     " set guifont=Ubuntu\ Mono\ 10
     " set guifont=Source\ Code\ Pro\ 10
 
-    " Monokai (dark) theme
-    " colorscheme monokai
-
-    " Solarized (light) theme
+    " Default color scheme - Solarized (light)
     colorscheme solarized
     set background=light
+
+    " Setting colorscheme from command line
+    " gvim . --cmd 'theme="dark"'
+    if exists("theme")
+        if theme == "dark" 
+            colorscheme monokai
+        endif
+        if theme == "solarizedlight" 
+            colorscheme solarized
+            set background=light
+        endif
+        if theme == "solarizeddark" 
+            colorscheme solarized
+            set background=dark
+        endif
+    endif
 endif
 
 " Vim-airline
