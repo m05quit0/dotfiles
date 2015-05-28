@@ -14,18 +14,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Common plugins
+Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
-Plugin 'sjl/gundo.vim'
-Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/ZoomWin'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'craigemery/vim-autotag'
 
 " Filetype specific plugins
@@ -33,7 +30,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'shawncplus/phpcomplete.vim'
 
 " All of your Plugins must be added before the following line
@@ -65,6 +61,14 @@ nmap ,d :b#<bar>bd#<bar>b<CR>
 set nobackup 	     " no backup files
 set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
+
+" NERDTree
+if has("gui_running")
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+endif
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
 
 " Netrw mode
 let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
@@ -136,12 +140,6 @@ function LessToCss()
   execute command
 endfunction
 autocmd BufWritePost,FileWritePost *.less call LessToCss()
-
-" Gundo
-nnoremap <F5> :GundoToggle<CR>
-let g:gundo_right = 1
-let g:gundo_preview_bottom = 1
-let g:gundo_width = 30
 
 " Git gutter
 let g:gitgutter_max_signs = 2000
