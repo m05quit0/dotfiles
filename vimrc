@@ -70,9 +70,6 @@ endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
 
-" Netrw mode
-let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,^\.git/$,^tags$,^\.vagrant/$'
-
 " Zen of GUI
 set guioptions-=m  " no menu bar
 set guioptions-=T  " no toolbar
