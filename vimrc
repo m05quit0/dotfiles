@@ -70,6 +70,7 @@ if has("gui_running")
 endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
+let NERDTreeMouseMode = 3
 
 " Zen of GUI
 set guioptions-=m  " no menu bar
