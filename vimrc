@@ -71,6 +71,7 @@ endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
 let NERDTreeMouseMode = 3
+let NERDTreeMinimalUI = 1
 
 " Zen of GUI
 set guioptions-=m  " no menu bar
