@@ -64,14 +64,11 @@ set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
 
 " NERDTree
-if has("gui_running")
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$']
 let NERDTreeMouseMode = 3
 let NERDTreeMinimalUI = 1
+map <C-n> :NERDTreeToggle<CR>
 
 " Zen of GUI
 set guioptions-=m  " no menu bar
