@@ -121,7 +121,7 @@ if has("gui_running")
 endif
 
 " Tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <F8> :TagbarOpenAutoClose<CR>
 
 " Syntastic
 let g:syntastic_check_on_open=1
