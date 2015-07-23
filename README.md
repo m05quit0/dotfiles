@@ -79,3 +79,7 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
 ## Flake8
     
     sudo pip install flake8
+
+## Less
+
+    sudo apt-get install node-less
