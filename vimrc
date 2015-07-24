@@ -157,7 +157,7 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
-autocmd BufWritePre *.py,*.js,*.coffee :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.py,*.js,*.coffee,*.html,*.css,*.less,*.php :call <SID>StripTrailingWhitespaces()
 
 " YouCompleteMe
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
