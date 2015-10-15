@@ -49,6 +49,7 @@ set nowrap " No wrap lines
 set nonumber " Hide line numbers
 
 " Список кодировок файлов для автоопределения
+set encoding=utf-8
 set fileencodings=utf-8,cp1251,koi8-r,cp866
 
 " Игнорировать регистр букв при поиске
@@ -83,9 +84,13 @@ endif
 
 " Font and theme of GUI
 if has("gui_running")
-    set guifont=Input\ Mono\ 11
-    " set guifont=Ubuntu\ Mono\ 10
-    " set guifont=Source\ Code\ Pro\ 10
+    if has("gui_gtk2")
+        set guifont=Input\ Mono\ 11
+        " set guifont=Ubuntu\ Mono\ 10
+        " set guifont=Source\ Code\ Pro\ 10
+    elseif has("gui_win32")
+        set guifont=InputMono:h11
+    endif
 
     " Default color scheme - Solarized (light)
     colorscheme solarized
