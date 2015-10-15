@@ -22,6 +22,8 @@
 
     :PluginUpdate
 
+Установка на Windows: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
+
 ## YouCompleteMe
 Установить YouCompleteMe с помощью Vundle.
 
@@ -36,6 +38,8 @@
     cd ~/.vim/bundle/YouCompleteMe
     ./install.sh
     Или ./install.sh —clang-completer, если нужна поддержка C-семейства ЯП.
+
+Установка на Windows: https://github.com/Valloric/YouCompleteMe/wiki/Windows-Installation-Guide
 
 ## Airline
 Использование шрифтов powerline для отображения дополнительных символов в airline.
