@@ -37,6 +37,9 @@ Plugin 'shawncplus/phpcomplete.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Syntax highlighting
+syntax on
+
 " Tab
 set tabstop=4
 set shiftwidth=4
