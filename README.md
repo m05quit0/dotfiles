@@ -31,13 +31,15 @@
 
 Установить зависимости
 
-    sudo apt-get install vim-youcompleteme cmake
+    sudo apt-get install vim-youcompleteme build-essential cmake
+    sudo apt-get install python-dev
 
 Скомпилировать YouCompleteMe
 
     cd ~/.vim/bundle/YouCompleteMe
-    ./install.sh
-    Или ./install.sh —clang-completer, если нужна поддержка C-семейства ЯП.
+    ./install.py
+    Или ./install.py --clang-completer, если нужна поддержка ЯП C-семейства.
+    --tern-completer, если нужна поддержка JavaScript
 
 Установка на Windows: https://github.com/Valloric/YouCompleteMe/wiki/Windows-Installation-Guide
 
