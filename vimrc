@@ -75,15 +75,15 @@ let NERDTreeMinimalUI = 1
 map <C-n> :NERDTreeToggle<CR>
 
 " Zen of GUI
-set guioptions-=m  " no menu bar
-set guioptions-=T  " no toolbar
-set guioptions-=r  " no scrollbar
-set guioptions-=L  " remove left-hand scrollbar
+if has("gui_running")
+    set guioptions-=m  " no menu bar
+    set guioptions-=T  " no toolbar
+    set guioptions-=r  " no scrollbar
+    set guioptions-=L  " remove left-hand scrollbar
+endif
 
 " Ruler
-if has("gui_running")
-    :set colorcolumn=120
-endif
+set colorcolumn=120
 
 " Font and theme of GUI
 if has("gui_running")
@@ -114,14 +114,14 @@ if has("gui_running")
             set background=dark
         endif
     endif
+else
+    colorscheme monokai
 endif
 
 " Vim-airline
-if has("gui_running")
-    set laststatus=2 "always show statusbar
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
-endif
+set laststatus=2 "always show statusbar
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Hide native mode indication
 if has("gui_running")
