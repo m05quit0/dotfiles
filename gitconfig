@@ -1,6 +1,3 @@
-[user]
-	email = m05quit0@yandex.ru
-	name = m05quit0
 [core]
 	editor = gvim -f
 	autocrlf = input
