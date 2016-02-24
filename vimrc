@@ -124,9 +124,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " Hide native mode indication
-if has("gui_running")
-    set noshowmode
-endif
+set noshowmode
 
 " Tagbar
 nmap <F8> :TagbarOpenAutoClose<CR>
