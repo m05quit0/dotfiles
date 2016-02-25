@@ -168,5 +168,5 @@ endfunction
 autocmd BufWritePre *.py,*.js,*.coffee,*.html,*.css,*.less,*.php :call <SID>StripTrailingWhitespaces()
 
 " Jedi-vim
-let g:jedi#show_call_signatures = "2"
+autocmd FileType python setlocal completeopt-=preview
 
