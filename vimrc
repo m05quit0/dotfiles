@@ -25,6 +25,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'craigemery/vim-autotag'
+Plugin 'SuperTab'
 
 " Filetype specific plugins
 Plugin 'davidhalter/jedi-vim'
