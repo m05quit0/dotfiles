@@ -117,7 +117,7 @@ if has("gui_running")
         endif
     endif
 else
-    colorscheme gruvbox
+    colorscheme monokai
 endif
 
 " Vim-airline
@@ -166,4 +166,7 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre *.py,*.js,*.coffee,*.html,*.css,*.less,*.php :call <SID>StripTrailingWhitespaces()
+
+" Jedi-vim
+let g:jedi#show_call_signatures = "2"
 
