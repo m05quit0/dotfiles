@@ -22,11 +22,12 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
+Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'craigemery/vim-autotag'
 
 " Filetype specific plugins
+Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
@@ -115,7 +116,7 @@ if has("gui_running")
         endif
     endif
 else
-    colorscheme monokai
+    colorscheme gruvbox
 endif
 
 " Vim-airline
