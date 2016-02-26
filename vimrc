@@ -27,6 +27,7 @@ Plugin 'bling/vim-airline'
 Plugin 'craigemery/vim-autotag'
 Plugin 'SuperTab'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
 
 " Filetype specific plugins
 Plugin 'davidhalter/jedi-vim'
