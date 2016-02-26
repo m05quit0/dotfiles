@@ -71,7 +71,7 @@ set noswapfile 	     " no swap files
 
 " NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$', '__pycache__']
+let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$', '__pycache__', '\.cache']
 let NERDTreeMouseMode = 3
 let NERDTreeMinimalUI = 1
 map <C-n> :NERDTreeToggle<CR>
