@@ -122,6 +122,12 @@ else
     colorscheme monokai
 endif
 
+" Map ctrl-movement keys to window switching
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
 " Vim-airline
 set laststatus=2 "always show statusbar
 let g:airline#extensions#tabline#enabled = 1
