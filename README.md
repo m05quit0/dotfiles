@@ -24,25 +24,6 @@
 
 Установка на Windows: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
 
-## YouCompleteMe
-Установить YouCompleteMe с помощью Vundle.
-
-    Plugin 'Valloric/YouCompleteMe'
-
-Установить зависимости
-
-    sudo apt-get install vim-youcompleteme build-essential cmake
-    sudo apt-get install python-dev
-
-Скомпилировать YouCompleteMe
-
-    cd ~/.vim/bundle/YouCompleteMe
-    ./install.py
-    Или ./install.py --clang-completer, если нужна поддержка ЯП C-семейства.
-    --tern-completer, если нужна поддержка JavaScript
-
-Установка на Windows: https://github.com/Valloric/YouCompleteMe/wiki/Windows-Installation-Guide
-
 ## Airline
 Использование шрифтов powerline для отображения дополнительных символов в airline.
 https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
@@ -72,15 +53,6 @@ https://powerline.readthedocs.org/en/master/installation/linux.html#fontconfig
 Раскомментирвать превью по сохранению .md файла и закомментировать хоткей ctrl+p - в конце скрипта.
 
     vim ~/.vim/bundle/vim-markdown-preview/plugin/vim-markdown-preview.vim
-
-## gVim
-Цвет отступов от рабочей области в полноэкранном режиме (справа и снизу).
-Создать файл ~/.gtkrc-2.0 cо следующим содержимым:
-
-    style "vimfix" {
-      bg[NORMAL] = "#202020" # this matches my gvim theme 'Normal' bg color.
-    }
-    widget "vim-main-window.*GtkForm" style "vimfix"
 
 ## Flake8
     
