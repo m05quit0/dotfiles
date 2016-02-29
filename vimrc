@@ -20,9 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'sickill/vim-monokai'
-Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'craigemery/vim-autotag'
 Plugin 'SuperTab'
@@ -89,6 +87,7 @@ endif
 " Ruler
 set colorcolumn=120
 
+" Color theme
 colorscheme monokai
 
 " Map ctrl-movement keys to window switching
