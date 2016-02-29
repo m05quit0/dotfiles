@@ -89,38 +89,7 @@ endif
 " Ruler
 set colorcolumn=120
 
-" Font and theme of GUI
-if has("gui_running")
-    if has("gui_gtk2")
-        set guifont=Input\ Mono\ 11
-        " set guifont=Ubuntu\ Mono\ 10
-        " set guifont=Source\ Code\ Pro\ 10
-    elseif has("gui_win32")
-        set guifont=InputMono:h11
-    endif
-
-    " Default color scheme - Solarized (light)
-    colorscheme solarized
-    set background=light
-
-    " Setting colorscheme from command line
-    " gvim . --cmd 'theme="dark"'
-    if exists("theme")
-        if theme == "dark" 
-            colorscheme monokai
-        endif
-        if theme == "solarizedlight" 
-            colorscheme solarized
-            set background=light
-        endif
-        if theme == "solarizeddark" 
-            colorscheme solarized
-            set background=dark
-        endif
-    endif
-else
-    colorscheme monokai
-endif
+colorscheme monokai
 
 " Map ctrl-movement keys to window switching
 map <C-k> <C-w><Up>
@@ -131,7 +100,6 @@ map <C-h> <C-w><Left>
 " Vim-airline
 set laststatus=2 "always show statusbar
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 
 " Hide native mode indication
 set noshowmode
