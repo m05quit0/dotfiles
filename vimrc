@@ -42,10 +42,6 @@ filetype plugin indent on    " required
 " Syntax highlighting
 syntax on
 
-" When a file has been detected to have been changed outside of Vim 
-" and it has not been changed inside of Vim, automatically read it again.
-set autoread 
-
 " Tab
 set tabstop=4
 set shiftwidth=4
