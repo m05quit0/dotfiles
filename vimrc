@@ -83,6 +83,9 @@ if has("gui_running")
     set guioptions-=T  " no toolbar
     set guioptions-=r  " no scrollbar
     set guioptions-=L  " remove left-hand scrollbar
+
+    " Set font face and font size
+    set guifont=Input\ Mono\ 11
 endif
 
 " Ruler
