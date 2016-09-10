@@ -18,6 +18,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 Plugin 'sickill/vim-monokai'
@@ -99,6 +100,7 @@ map <C-h> <C-w><Left>
 " Vim-airline
 set laststatus=2 "always show statusbar
 let g:airline#extensions#tabline#enabled = 1
+
 
 " Hide native mode indication
 set noshowmode
