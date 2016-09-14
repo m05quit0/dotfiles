@@ -33,6 +33,10 @@
     
     sudo pip install flake8
 
+## Jedi
+    
+    sudo pip install jedi
+
 ## Less
 
     sudo apt-get install node-less
