@@ -36,6 +36,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'IN3D/vim-raml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
