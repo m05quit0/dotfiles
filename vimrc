@@ -118,15 +118,6 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = "--max-line-length=120"
 let g:syntastic_javascript_checkers = ['jshint']
 
-" Compiling Less Files from Vim every save action
-function LessToCss()
-  let current_file = shellescape(expand('%:p'))
-  let filename = shellescape(expand('%:r'))
-  let command = "silent !lessc " . current_file . " " . filename . ".css"
-  execute command
-endfunction
-autocmd BufWritePost,FileWritePost *.less call LessToCss()
-
 " Git gutter
 let g:gitgutter_max_signs = 2000
 highlight clear SignColumn " fix dark gutter background with solarized light theme
