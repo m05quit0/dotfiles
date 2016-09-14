@@ -27,6 +27,7 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'SuperTab'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'Raimondi/delimitMate'
 
 " Filetype specific plugins
 Plugin 'davidhalter/jedi-vim'
