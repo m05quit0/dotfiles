@@ -1,0 +1,9 @@
+{
+	"font_face": "Input Mono",
+	"font_size": 11,
+	"ignored_packages":
+	[
+	],
+	"rulers": [80, 120],
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".idea", ".vagrant", ".cache", "__pycache__"],
+}

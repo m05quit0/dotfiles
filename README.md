@@ -10,6 +10,7 @@
 Добавить ссылки на конфиги в соответствующих местах.
 
     ln -s ~/Dev/etc/dotfiles/vimrc ~/.vimrc
+    ln -s ~/Dev/etc/dotfiles/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
     ln -s ~/Dev/etc/dotfiles/gitconfig ~/.gitconfig
     ln -s ~/Dev/etc/dotfiles/jshintrc ~/.jshintrc
 
