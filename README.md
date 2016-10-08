@@ -1,17 +1,15 @@
 # DotFiles
 
-Конфигурационные файлы моего рабочего окружения для разработки.
+Конфигурационные файлы рабочего окружения.
 
 ## Установка
 Склонировать этот репозиторий.
 
-    git clone https://github.com/m05quit0/dotfiles.git ~/Dev/etc/dotfiles
+    git clone git@github.com:m05quit0/dotfiles.git ~/Dev/etc/dotfiles
 
 Добавить ссылки на конфиги в соответствующих местах.
 
     ln -s ~/Dev/etc/dotfiles/vimrc ~/.vimrc
-    ln -s ~/Dev/etc/dotfiles/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-    ln -s ~/Dev/etc/dotfiles/Default.sublime-theme ~/.config/sublime-text-3/Packages/User/Default.sublime-theme
     ln -s ~/Dev/etc/dotfiles/gitconfig ~/.gitconfig
     ln -s ~/Dev/etc/dotfiles/jshintrc ~/.jshintrc
 
@@ -26,13 +24,6 @@
 
     :PluginUpdate
 
-Установка на Windows: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
-
-### CTags
-Для работы tagbar понадобится ctags.
-
-    sudo apt-get install exuberant-ctags
-
 ### Flake8
     
     sudo pip install flake8
@@ -42,9 +33,10 @@
     sudo pip install jedi
 
 ### Less
+    sudo apt install node-legacy
+    sudo apt install node-less
 
-    sudo apt-get install node-less
+### CTags
+Для работы tagbar понадобится ctags.
 
-## Sublime Text 3
-
-Установить Package Control https://packagecontrol.io
+    sudo apt install exuberant-ctags
