@@ -21,7 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
-Plugin 'sickill/vim-monokai'
+Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'craigemery/vim-autotag'
 Plugin 'SuperTab'
@@ -93,8 +93,9 @@ endif
 " Ruler
 set colorcolumn=120
 
-" Color theme
-colorscheme monokai
+" Color scheme
+colorscheme gruvbox
+set background=dark
 
 " Map ctrl-movement keys to window switching
 map <C-k> <C-w><Up>
