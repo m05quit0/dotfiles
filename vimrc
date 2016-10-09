@@ -31,6 +31,7 @@ Plugin 'Raimondi/delimitMate'
 
 " Filetype specific plugins
 Plugin 'davidhalter/jedi-vim'
+Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
@@ -106,6 +107,7 @@ map <C-h> <C-w><Left>
 " Vim-airline
 set laststatus=2 "always show statusbar
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#virtualenv#enabled = 1
 
 
 " Hide native mode indication
