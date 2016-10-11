@@ -146,3 +146,5 @@ autocmd BufWritePre *.py,*.js,*.coffee,*.html,*.css,*.less,*.php :call <SID>Stri
 " Jedi-vim
 autocmd FileType python setlocal completeopt-=preview
 
+" Filetypes
+au FileType yaml setl sw=2 sts=2 et
