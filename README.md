@@ -20,9 +20,19 @@
 
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+Для Windows заменить
+
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+
+на
+
+    set rtp+=%HOME%/vimfiles/bundle/Vundle.vim/
+    call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+
 Установить все плагины.
 
-    :PluginUpdate
+    :PluginInstall
 
 ### Flake8
     
