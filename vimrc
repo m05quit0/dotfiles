@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set backspace=indent,eol,start " correct backspace work
 filetype off                  " required
 
 " Istall Vundle
@@ -70,6 +71,7 @@ nmap ,d :b#<bar>bd#<bar>b<CR>
 
 " отключаем бэкапы и своп-файлы
 set nobackup 	     " no backup files
+set noundofile       " no new format backup files
 set nowritebackup    " only in case you don't want a backup file while editing
 set noswapfile 	     " no swap files
 
