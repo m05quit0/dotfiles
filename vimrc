@@ -81,6 +81,8 @@ let NERDTreeIgnore = ['\.swp$', '\.pyc$', '^\.git$', '^tags$', '^\.vagrant$', '_
 let NERDTreeMouseMode = 3
 let NERDTreeMinimalUI = 1
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
 " Zen of GUI
 if has("gui_running")
