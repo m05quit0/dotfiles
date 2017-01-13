@@ -31,15 +31,13 @@ Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
 
 " Filetype specific plugins
+Plugin 'sheerun/vim-polyglot'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'mattn/emmet-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'moll/vim-node'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'IN3D/vim-raml'
-Plugin 'solarnz/thrift.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,7 +91,7 @@ if has("gui_running")
     set guioptions-=L  " remove left-hand scrollbar
 
     " Set font face and font size
-    set guifont=Input\ Mono\ 11
+    set guifont=Input\ 10
 endif
 
 " Ruler
