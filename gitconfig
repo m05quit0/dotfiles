@@ -10,6 +10,3 @@
     co = checkout
     br = branch
     aa = add -A
-[user]
-	email = m05quit0@yandex.ru
-	name = m05quit0
