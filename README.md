@@ -51,3 +51,7 @@
 Для работы tagbar понадобится ctags.
 
     sudo apt install exuberant-ctags
+
+### JSHint
+
+    sudo npm install -g jshint 
