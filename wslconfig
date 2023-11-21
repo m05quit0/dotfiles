@@ -1,0 +1,7 @@
+[wsl2]
+# memory=48GB
+# processors=8
+swap=64GB
+
+[automount]
+options = "metadata,umask=077,fmask=11,case=off"
